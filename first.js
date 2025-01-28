@@ -146,3 +146,130 @@ let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 companies.push("Amazon");
 console.log(companies);
 //Done!
+
+//Functions & methods_Task 1
+//Ques 1: Create a function that takes a string as an argument and returns the number of vowels in the string.
+//a) create with function (normal function)
+//b) create with function using return statement
+//c) create with arrow function
+
+//a)
+function vowelCount(string){
+    let count = 0;
+    for (char of string){
+        if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u"){
+            count += 1;
+        }
+    }
+    console.log(`number of vowel is ${count}`);
+}
+
+vowelCount("HelloWorld");
+
+//b)
+function vowelCount(string){
+    let count = 0;
+    for (char of string){
+        if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u"){
+            count += 1;
+        }
+    }
+    return `number of vowel is ${count}`;
+}
+
+v_c = vowelCount("HelloWorld");
+console.log(v_c);
+
+// c)
+const vowelCount = (string) => {
+    let count = 0;
+    for (char of string){
+        if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u"){
+            count += 1;
+        }
+    }
+    return `number of vowel is ${count}`;
+}
+
+v_c = vowelCount("HelloWorld");
+console.log(v_c); (just ei line ta likhleo hobe)
+//Done!
+
+//Functions & methods_Task 2
+//Ques 2: For a given array of numbers, print the square of each value using the forEach loop.
+
+//When we need calculations on array, we can use forEach loop. 
+//generally forEach loop is performed by arrow function. 
+//Also forEach loop is only works for array. (It will not work for string)
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach ((elem) =>{
+    console.log(elem ** 2);
+});
+// //No need to call the function
+
+// //or
+
+let numbers = [1, 2, 3, 4, 5];
+
+let calSquare = (elem) => {
+    console.log(elem ** 2);
+}
+numbers.forEach (calcSquare);
+//Here forEach is called Higher order function
+//calcSquare is called call back function
+//Done!
+
+
+//Functions & methods_Task 3
+//Ques 3: We are given array of marks of students. Filter out the marks of students that scored 90+ .
+
+//When we need conditions on array, we can use filter method.
+let nums = [85, 97, 44, 95, 37, 76, 60];
+
+let above90 = nums.filter((elem) =>{
+    if (elem > 90) {
+        console.log(elem);
+    }
+});
+
+//or using return statement
+
+let nums = [85, 97, 44, 95, 37, 76, 60];
+
+let above90 = nums.filter((elem) =>{
+    if (elem > 90) {
+        return(elem);
+    }
+});
+console.log(above90);
+//Done!
+
+//Functions & methods_Task 4
+//Ques 4: a)Take a number n as input fro user. Create an array of numbers from 1 to n.
+//b) Use the reduce method to calculate sum of all numbers in the array.
+//c) Use the reduce method to calculate product of all numbers in the array.
+
+//a)
+let n = prompt("Enter a number: ");
+let arr = [];
+ for (let i = 1; i <= n; i++){
+    arr[i - 1] = i;
+ }
+ console.log(arr);
+
+ //b)
+//When some operations are performed on array and the final result is the single value then we use the reduce method.
+let calcSum = arr.reduce((res_val, curr_val) => {
+    res_val += curr_val;
+    return res_val;
+})
+console.log(calcSum);
+
+//c)
+let calcProduct = arr.reduce((res_val, curr_val) => {
+    res_val *= curr_val;
+    return res_val;
+})
+console.log(calcProduct);
+//Done!
