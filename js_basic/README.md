@@ -1,1 +1,1 @@
-Datatype, Variable, Operators, Conditional statements, Loop, String, Array
+Datatype, Variable, Operators, Conditional statements, Loop, String, Array, functions & methods
