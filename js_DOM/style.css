@@ -1,3 +1,4 @@
+/* Task_1 */
 .box {
     height: 100px;
     width: 100px;
@@ -5,4 +6,15 @@
     margin: 10px;
     text-align: center;
     border: 0.5px solid black;
+}
+
+/* Task_2 */
+.content {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newClass {
+    background-color: greenyellow;
 }

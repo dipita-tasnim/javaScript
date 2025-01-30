@@ -57,3 +57,31 @@ for (i of divs) {
 
 
 //Now my webpage is successfully changed from first, second, third box to--chocolate, mystery, magic box to--my box 1, my box 2, my box 3 with javaDcript code instead of html codes.
+
+
+
+//DOM Task 2
+//Ques 2: Create a new button element. Give it a text "click me", background color of red & text color of white. Insert the button as the first element inside the body tag.
+
+let btn = document.createElement("button");
+
+btn.innerText = "click me";
+btn.style.backgroundColor = "red";
+btn.style.color = "white";
+
+let body = document.querySelector("body");
+
+body.prepend(btn);
+
+
+
+//DOM Task 3
+//Ques 3: Create a <p> tag in html, give it a class. Give it some styling in CSS. Now create a new class in CSS and using JS, try to append this class to the <p> element.
+
+let para = document.querySelector("p");
+// para.setAttribute("class", "newClass");
+
+//Notice: In this case the old style of <p> tag will be lost. If we need both old and new one then classList should be used instead of setAttribute.
+//comment the setAttribute line and uncomment the classList line. 
+para.classList.add("newClass");
+//Ekhankar html file e class ektai ache(content) but webpage e inspect kore element e gele dekhbo duita class(content, newClass) p tag er jonno lekha.
