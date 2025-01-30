@@ -1,2 +1,2 @@
-DOM (Document Object Model)
-Accessing and changing HTML codes by javaScript
+DOM (Document Object Model)\n
+Accessing, changing HTML codes by javaScript
