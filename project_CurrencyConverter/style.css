@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { /*full project part*/
+    display: flex;
+    justify-content: center; /*full body te ja ache shobkichu center e ashbe.*/
+    align-items: center;
+    min-height: 100vh;  /* agge top e chilo, ekhon majh borabor ashbe. */
+    background-color: #f4e4ba;
+}
+
+.container { /*white part*/
+    background-color: #fff;
+    padding: 2rem; /*container(white part) er charpashe space ashbe. Aage shob lege chilo background er shathe(white part er bhitorer lekha gulo)*/
+    border-radius: 1rem; /*corner gulo halka round holo.*/
+    min-height: 45vh;
+    width: 40vh; /*width barlo*/
+}  
+
+form { /*white part er bhitorer shob content*/
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+    width: 100%; /*inp box, dropdown box, get exchange button the full width jure ashbe*/
+    border: none; /*inp box, dropdown box, get exchange button er by default border chole jabe*/
+    outline: none; /*border none korleo inp dite gele border show korto, ekhon oitao korbe na*/
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 1px solid lightgray; /*inp e halke border ashbe*/
+    font-size: 1rem;
+    height: 3rem; /*upor niche height barlo*/
+    padding-left: 0.5rem; /*inp jokhon type korbo tokhon oita ekdom left side e border er shathe gheshe thakbe na, halka ektu gap thakbe*/
+}
+
+.dropdown {
+    display: flex; /*dropdown er duita part same line e ashbe. Aage upor niche chilo.*/
+    justify-content: space-between; /*duita dropdown part er majhe gap barlo*/
+    align-items: center; /*arrow img ta majhe ashbe. Aage uporer dike To borabor chilo*/
+    margin-top: 2rem; /*inp box er niche gap niye then dropdown part ashbe*/
+}
+
+.dropdown i { /*arrow img part*/
+    font-size: 1.5rem; /*thick holo*/
+    margin-top: 1rem; /*ektu niche namlo*/
+}
+
+.select-container img{ /*img part*/
+    max-width: 2rem; /*img size ta choto holo*/
+}
+
+.select-container { /*dropdown part--flag img and pasher USD milay hocche dropdown part*/
+    display: flex; /*img and dropdown same line e ashche. Aage dropdown ta halka niche chilo*/
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray; /*halka bordar ashbe*/
+    width: 6rem; /*left-right e width barbe*/
+    border-radius: 0.5rem; /*border er corner gulo halka round hobe*/
+}
+
+.select-container select { /*flag er pasher USD,INR lekha ta*/
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: auto; /*flag and USD ei duita border er majh borabor ashbe*/
+}
+
+.msg { /*1USD = 80INR part*/
+    margin: 2rem 0 2rem 0; /*1USD = 80INR part er upor niche gap create hobe */
+}
+
+form button { /*Get Exchange Rate button*/
+    height: 3rem; /*button er height barbe*/
+    background-color: #af4d98; /*button er background color */
+    color: #fff; /*button er text color */
+    font-size: 1.15rem;
+    cursor: pointer;
+    font-family: Georgia, Times, 'Times New Roman', serif
+}
+
+
