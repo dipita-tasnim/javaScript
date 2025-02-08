@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center; /*webpage er shob text center e thakbe*/
+}
+
+h1 { /*uporer rock-paper-scissors er title part*/
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem; /*height barbe*/
+    line-height: 5rem; /*vertically majhe anlam*/
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%; /*hover korle background color ante ekhane ekta border-radius dite hobe*/
+    display: flex; /* ekhan theke next 3 ta line er kaj holo hover korar por background blue er majhe img ta anar jonno*/
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    /* opacity: 0.5; /*img e hover korle img ta halka hoye jay*/
+    cursor: pointer; 
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    width: 150px; 
+    object-fit: cover; /*img er size ta height width er proportion milay dekhte perfect howar jonno*/
+    border-radius: 50%; /*img er corner gulo round hoye round shape e convert hoye jabe*/
+}
+
+.choices {
+    display: flex; /*img gulo pashapashi show hobe.*/
+    justify-content: center; /*img gulo center e ashbe.*/
+    align-items: center;
+    gap: 3rem; /*img gulor majhe gap barbe*/
+    margin-top: 5rem; /*img gulor upore gap barbe*/
+}
+
+.score-board {
+    display: flex; /*score pashapashi ashbe*/
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* score, you, comp er font size barbe*/
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem; /*score ke arektu boro korlam*/
+}
+
+/* .msg-container{
+    margin-top: 5rem; score, you, comp er por gap create hoye play you move msg ashbe
+} */
+
+#msg { /*play you move part*/
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 5rem;
+    display: inline-block; /* jototuku jayga jure lekha tototuk shudhu background e blue thakbe. aage puro page er ek side theke arek side porjonto msg div part ta blue chilo. shudhu inline deya jay but block shoho dile upore comment kora msg-container part er kaj tao kore fele ekbare.*/
+    padding: 1rem; /*chardik diye background ta boro hobe, lekhar shathe lege thakbe na*/
+    border-radius: 1rem;
+}
