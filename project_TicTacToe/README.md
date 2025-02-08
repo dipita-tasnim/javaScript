@@ -1,1 +1,1 @@
-Technology: JavaScript, HTML, CSS
+Technologies: JavaScript, HTML, CSS
