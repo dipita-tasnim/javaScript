@@ -1,1 +1,3 @@
-Technologies: JavaScript, HTML, CSS
+Fun JS game 
+
+**Tech Stack:** JavaScript | HTML | CSS
