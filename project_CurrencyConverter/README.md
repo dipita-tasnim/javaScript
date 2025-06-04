@@ -1,1 +1,3 @@
-This is an API Project using JavaScript, HTML, CSS
+Convert currency in real-time
+
+**Tech Stack:** JavaScript | HTML | CSS | 
