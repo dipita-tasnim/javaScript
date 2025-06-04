@@ -1,3 +1,3 @@
 Classic game in JavaScript
 
-Technologies: JavaScript | HTML | CSS
+Tech stack: JavaScript | HTML | CSS
